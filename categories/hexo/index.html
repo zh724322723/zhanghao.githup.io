@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8">
   
-  <title>张浩</title>
+  <title>Category: hexo | 张浩</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description">
 <meta property="og:type" content="website">
 <meta property="og:title" content="张浩">
-<meta property="og:url" content="https://zhanghao87.github.io/index.html">
+<meta property="og:url" content="https://zhanghao87.github.io/categories/hexo/index.html">
 <meta property="og:site_name" content="张浩">
 <meta property="og:description">
 <meta name="twitter:card" content="summary">
@@ -178,78 +178,52 @@
 </nav>
       <div class="body-wrap">
   
-    <article id="post-buildGitHubBlog" class="article article-type-post" itemscope itemprop="blogPost">
   
-    <div class="article-meta">
-      <a href="/2015/04/30/buildGitHubBlog/" class="article-date">
-  	<time datetime="2015-04-30T12:09:51.000Z" itemprop="datePublished">2015-04-30</time>
+    
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2015" class="archive-year">2015</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2015/04/30/buildGitHubBlog/" class="archive-article-date">
+  	<time datetime="2015-04-30T12:09:51.000Z" itemprop="datePublished">4月 30</time>
 </a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
+        </div>
+    	 
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2015/04/30/buildGitHubBlog/">创建属于你自己的github博客</a>
+      <a class="archive-article-title" href="/2015/04/30/buildGitHubBlog/">创建属于你自己的github博客</a>
     </h1>
   
 
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="如何创建一个属于你自己的博客">如何创建一个属于你自己的博客</h2><p>经过2天的折腾，终于把github博客搭建了起来,使用的工具是hexo。过程中遇到了小小的困难通过google和咨询朋友整个过程还算比较顺利。我决定把这个过程中遇到的问题及解决办法和大家分享一下。</p>
-<h3 id="准备工作">准备工作</h3><h4 id="1-github注册">1.github注册</h4><ul>
-<li>1.1首先需要在<a href="https://github.com/" target="_blank" rel="external">github</a>注册自己的账号。<br><img src="/2015/04/30/buildGitHubBlog/img/githubsignup.bmp" alt=""><br>账号注册好后面回用到，也可跳过该步骤用到时再注册。</li>
-</ul>
-<h4 id="2-git安装">2.git安装</h4><p>不了解git的同学，建议先学习下git的基本用法。英文好的同学可直接到<a href="http://git-scm.com/book/en/v2" target="_blank" rel="external">git官网</a>学习，英语不好的同学可参考<a href="http://www.bootcss.com/p/git-guide/" target="_blank" rel="external">http://www.bootcss.com/p/git-guide/</a>,强烈建议阅读英文文档。<br>2.1首先到<a href="http://git-scm.com/downloads" target="_blank" rel="external">git官网</a>下载相应操作系统的git版本，下载后傻瓜式安装。</p>
-<h4 id="3-node-js安装">3.node.js安装</h4><p>在<a href="https://nodejs.org/" target="_blank" rel="external">nodejs官网 https://nodejs.org/</a>下载nodejs。<br><img src="/2015/04/30/buildGitHubBlog/img/node.bmp" alt=""><br>点击Install安装吧。</p>
-<h4 id="4-安装hexo">4.安装hexo</h4><p>hexo的使用文档参见官网说明<a href="http://hexo.io/zh-cn/" target="_blank" rel="external">http://hexo.io/zh-cn/</a>。</p>
-<h5 id="4-1用npm命令安装hexo">4.1用npm命令安装hexo</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br></pre></td></tr></table></figure>
-<p>安装hexo服务器<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-server --save</span><br></pre></td></tr></table></figure></p>
-<h5 id="4-2在githup创建仓库">4.2在githup创建仓库</h5><p>登录刚才已注册好的github账户，点击下图展示区域建立仓库。<br><img src="/2015/04/30/buildGitHubBlog/img/github01.bmp" alt=""><br><img src="/2015/04/30/buildGitHubBlog/img/github02.bmp" alt=""><br>注意项目的名字要和注册时的用户名一样。</p>
-<h5 id="4-3生成并配置git_ssh公钥">4.3生成并配置git ssh公钥</h5><p>生成ssh公钥的方法参考<a href="https://git-scm.com/book/zh/v1/%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A%E7%9A%84-Git-%E7%94%9F%E6%88%90-SSH-%E5%85%AC%E9%92%A5" target="_blank" rel="external">官方说明文档</a><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen</span><br></pre></td></tr></table></figure></p>
-<h5 id="4-4用hexo创建blog项目">4.4用hexo创建blog项目</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo init blog</span><br><span class="line"><span class="built_in">cd</span> blog</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure>
-<p>启动服务预览我们刚才建立的项目<br><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo server -<span class="tag">i</span> localhost</span><br></pre></td></tr></table></figure></p>
-<p>在浏览器输入 <code>localhost:4000/</code></p>
-<h5 id="4-5将博客站点发布到ggithub">4.5将博客站点发布到ggithub</h5><p>修改_config.yml配置文件<br><figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">deploy:</span></span><br><span class="line"><span class="label">  type:</span> git</span><br><span class="line"><span class="label">  repo:</span> <span class="string">https:</span><span class="comment">//github.com/zhanghao87/zhanghao87.github.io.git</span></span><br><span class="line"><span class="label">  branch:</span> master</span><br><span class="line"><span class="label">  message:</span> <span class="string">updated:</span>&#123;&#123; now(<span class="string">"YYYY-MM-DD HH:mm:ss"</span>) &#125;&#125;</span><br></pre></td></tr></table></figure></p>
-<p>把repo：地址改为注册的github地址。<br>发布博客到github<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo deploy</span><br></pre></td></tr></table></figure></p>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
+        <div class="article-info info-on-right">
+          
 	<div class="article-tag tagcloud">
 		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/blog/">blog</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/git/">git</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/github/">github</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li></ul>
 	</div>
 
-      
+          
 	<div class="article-category tagcloud">
 	<a class="article-category-link" href="/categories/hexo/">hexo</a>
 	</div>
 
 
-      
-      <div class="clearfix"></div>
-    </div>
-    
+        </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
-  
 </article>
-
-
-
-
-
-
   
+  
+    </div></section>
   
 </div>
       <footer id="footer">

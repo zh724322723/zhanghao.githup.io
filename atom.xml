@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zhanghao87.github.io/"/>
-  <updated>2015-05-19T16:03:19.491Z</updated>
+  <updated>2016-04-09T13:07:12.904Z</updated>
   <id>https://zhanghao87.github.io/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="https://zhanghao87.github.io/2015/04/30/buildGitHubBlog/"/>
     <id>https://zhanghao87.github.io/2015/04/30/buildGitHubBlog/</id>
     <published>2015-04-30T12:09:51.000Z</published>
-    <updated>2015-05-19T16:03:19.491Z</updated>
+    <updated>2016-04-09T13:07:12.904Z</updated>
     
     <content type="html">&lt;h2 id=&quot;如何创建一个属于你自己的博客&quot;&gt;如何创建一个属于你自己的博客&lt;/h2&gt;&lt;p&gt;经过2天的折腾，终于把github博客搭建了起来,使用的工具是hexo。过程中遇到了小小的困难通过google和咨询朋友整个过程还算比较顺利。我决定把这个过程中遇到的问题及解决办法和大家分享一下。&lt;/p&gt;
 &lt;h3 id=&quot;准备工作&quot;&gt;准备工作&lt;/h3&gt;&lt;h4 id=&quot;1-github注册&quot;&gt;1.github注册&lt;/h4&gt;&lt;ul&gt;
@@ -46,8 +46,16 @@
     
     </summary>
     
+      <category term="hexo" scheme="https://zhanghao87.github.io/categories/hexo/"/>
     
-      <category term="git github hexo blog" scheme="https://zhanghao87.github.io/tags/git-github-hexo-blog/"/>
+    
+      <category term="blog" scheme="https://zhanghao87.github.io/tags/blog/"/>
+    
+      <category term="git" scheme="https://zhanghao87.github.io/tags/git/"/>
+    
+      <category term="github" scheme="https://zhanghao87.github.io/tags/github/"/>
+    
+      <category term="hexo" scheme="https://zhanghao87.github.io/tags/hexo/"/>
     
   </entry>
   
