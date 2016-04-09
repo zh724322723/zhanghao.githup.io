@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>张浩</title>
+  <subtitle>张浩的博客</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://zhanghao87.github.io/"/>
+  <updated>2015-05-19T16:03:19.491Z</updated>
+  <id>https://zhanghao87.github.io/</id>
+  
+  <author>
+    <name>张浩</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>创建属于你自己的github博客</title>
+    <link href="https://zhanghao87.github.io/2015/04/30/buildGitHubBlog/"/>
+    <id>https://zhanghao87.github.io/2015/04/30/buildGitHubBlog/</id>
+    <published>2015-04-30T12:09:51.000Z</published>
+    <updated>2015-05-19T16:03:19.491Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;如何创建一个属于你自己的博客&quot;&gt;如何创建一个属于你自己的博客&lt;/h2&gt;&lt;p&gt;经过2天的折腾，终于把github博客搭建了起来,使用的工具是hexo。过程中遇到了小小的困难通过google和咨询朋友整个过程还算比较顺利。我决定把这个过程中遇到的问题及解决办法和大家分享一下。&lt;/p&gt;
+&lt;h3 id=&quot;准备工作&quot;&gt;准备工作&lt;/h3&gt;&lt;h4 id=&quot;1-github注册&quot;&gt;1.github注册&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;1.1首先需要在&lt;a href=&quot;https://github.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;github&lt;/a&gt;注册自己的账号。&lt;br&gt;&lt;img src=&quot;/2015/04/30/buildGitHubBlog/img/githubsignup.bmp&quot; alt=&quot;&quot;&gt;&lt;br&gt;账号注册好后面回用到，也可跳过该步骤用到时再注册。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;2-git安装&quot;&gt;2.git安装&lt;/h4&gt;&lt;p&gt;不了解git的同学，建议先学习下git的基本用法。英文好的同学可直接到&lt;a href=&quot;http://git-scm.com/book/en/v2&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;git官网&lt;/a&gt;学习，英语不好的同学可参考&lt;a href=&quot;http://www.bootcss.com/p/git-guide/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.bootcss.com/p/git-guide/&lt;/a&gt;,强烈建议阅读英文文档。&lt;br&gt;2.1首先到&lt;a href=&quot;http://git-scm.com/downloads&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;git官网&lt;/a&gt;下载相应操作系统的git版本，下载后傻瓜式安装。&lt;/p&gt;
+&lt;h4 id=&quot;3-node-js安装&quot;&gt;3.node.js安装&lt;/h4&gt;&lt;p&gt;在&lt;a href=&quot;https://nodejs.org/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;nodejs官网 https://nodejs.org/&lt;/a&gt;下载nodejs。&lt;br&gt;&lt;img src=&quot;/2015/04/30/buildGitHubBlog/img/node.bmp&quot; alt=&quot;&quot;&gt;&lt;br&gt;点击Install安装吧。&lt;/p&gt;
+&lt;h4 id=&quot;4-安装hexo&quot;&gt;4.安装hexo&lt;/h4&gt;&lt;p&gt;hexo的使用文档参见官网说明&lt;a href=&quot;http://hexo.io/zh-cn/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://hexo.io/zh-cn/&lt;/a&gt;。&lt;/p&gt;
+&lt;h5 id=&quot;4-1用npm命令安装hexo&quot;&gt;4.1用npm命令安装hexo&lt;/h5&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;npm install hexo-cli -g&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;安装hexo服务器&lt;br&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;npm install hexo-server --save&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h5 id=&quot;4-2在githup创建仓库&quot;&gt;4.2在githup创建仓库&lt;/h5&gt;&lt;p&gt;登录刚才已注册好的github账户，点击下图展示区域建立仓库。&lt;br&gt;&lt;img src=&quot;/2015/04/30/buildGitHubBlog/img/github01.bmp&quot; alt=&quot;&quot;&gt;&lt;br&gt;&lt;img src=&quot;/2015/04/30/buildGitHubBlog/img/github02.bmp&quot; alt=&quot;&quot;&gt;&lt;br&gt;注意项目的名字要和注册时的用户名一样。&lt;/p&gt;
+&lt;h5 id=&quot;4-3生成并配置git_ssh公钥&quot;&gt;4.3生成并配置git ssh公钥&lt;/h5&gt;&lt;p&gt;生成ssh公钥的方法参考&lt;a href=&quot;https://git-scm.com/book/zh/v1/%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A%E7%9A%84-Git-%E7%94%9F%E6%88%90-SSH-%E5%85%AC%E9%92%A5&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;官方说明文档&lt;/a&gt;&lt;br&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;ssh-keygen&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h5 id=&quot;4-4用hexo创建blog项目&quot;&gt;4.4用hexo创建blog项目&lt;/h5&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;hexo init blog&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;cd&lt;/span&gt; blog&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;npm install&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;启动服务预览我们刚才建立的项目&lt;br&gt;&lt;figure class=&quot;highlight stylus&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;hexo server -&lt;span class=&quot;tag&quot;&gt;i&lt;/span&gt; localhost&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;在浏览器输入 &lt;code&gt;localhost:4000/&lt;/code&gt;&lt;/p&gt;
+&lt;h5 id=&quot;4-5将博客站点发布到ggithub&quot;&gt;4.5将博客站点发布到ggithub&lt;/h5&gt;&lt;p&gt;修改_config.yml配置文件&lt;br&gt;&lt;figure class=&quot;highlight groovy&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;deploy:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;label&quot;&gt;  type:&lt;/span&gt; git&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;label&quot;&gt;  repo:&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;https:&lt;/span&gt;&lt;span class=&quot;comment&quot;&gt;//github.com/zhanghao87/zhanghao87.github.io.git&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;label&quot;&gt;  branch:&lt;/span&gt; master&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;label&quot;&gt;  message:&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;updated:&lt;/span&gt;&amp;#123;&amp;#123; now(&lt;span class=&quot;string&quot;&gt;&quot;YYYY-MM-DD HH:mm:ss&quot;&lt;/span&gt;) &amp;#125;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;把repo：地址改为注册的github地址。&lt;br&gt;发布博客到github&lt;br&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;hexo deploy&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;如何创建一个属于你自己的博客&quot;&gt;如何创建一个属于你自己的博客&lt;/h2&gt;&lt;p&gt;经过2天的折腾，终于把github博客搭建了起来,使用的工具是hexo。过程中遇到了小小的困难通过google和咨询朋友整个过程还算比较顺利。我决定把这个过程中遇到的问题及解决办法和大家分
+    
+    </summary>
+    
+    
+      <category term="git github hexo blog" scheme="https://zhanghao87.github.io/tags/git-github-hexo-blog/"/>
+    
+  </entry>
+  
+</feed>
